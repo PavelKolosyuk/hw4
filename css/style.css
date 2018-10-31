@@ -1,3 +1,124 @@
+html {
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+*,
+*::before,
+*::after {
+    block-size: inherit;
+}
+
+.container {
+  width: 1112px;
+  margin: 0 auto;
+  background: lightgreen;
+}
+
+.header {
+  padding-top: 36px;
+  padding-bottom: 106px;
+}
+
+.nav {
+  height: 40px;
+
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 30px;
+  line-height: 30px;
+  color: rgb(81, 81, 81);
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100px;
+  padding-left: auto;
+
+}
+
+.logo :hover,
+.logo :focus {
+  color: rgb(26, 188, 156);
+  font-weight: bold;
+}
+
+.nav_list{
+  display: inline-block;
+  width: 474px;
+  text-align: center;
+  margin-left: 538px;
+  vertical-align: middle;
+}
+.nav_item {  
+  display: inline-block;
+
+}
+.nav_item a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 10px;
+  color: rgb(81, 81, 81);
+  /* font-family: 'Playfair Display', serif; */
+  width: 78px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+    
+.nav_item :hover,
+.nav_item :focus {
+    color: rgb(26, 188, 156);
+}
+
+.news_item {
+  display: inline-block;
+  width: 348px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.news_item:not(:last-child){
+    margin-right: 34px;
+}
+.img_div_1 { 
+  background-image: url("../img/ipad-632394_960_720.jpg");
+  width: 348px;
+  height: 264px;
+  background-repeat: no-repeat;
+  background-position: 55% 0%;
+  background-size: auto 120%;
+  overflow: hidden;
+}
+
+.img_div_2 { 
+  background-image: url("../img/slide1.jpg");
+  width: 348px;
+  height: 264px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto 100%;
+  overflow: hidden;
+}
+
+.img_div_3 { 
+  background-image: url("../img/product-img-5.jpg");
+  width: 348px;
+  height: 264px;
+  background-repeat: no-repeat;
+  background-position: 55% 50%;
+  background-size: 110%;
+  overflow: hidden;
+}
+
+/* .news_img {
+  width: 348px;
+  height: 100%;
+} */
+
+
+
+
+
+
 
 
 
