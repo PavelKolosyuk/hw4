@@ -31,18 +31,18 @@ html {
   text-transform: uppercase;
   width: 100px;
 }
-.logo :hover,
-.logo :focus {
+.logo:hover,
+.logo:focus {
   color: #1abc9c;
   font-weight: bold;
 }
 .nav_list{
-  display: inline-block;
   float: right;
 }
-.clear {
-  height: 0;
-	clear: both;
+.clearfix::after{
+  content: '';
+  clear: both;
+  display: block;
 }
 .nav_item {  
   display: inline-block;
@@ -60,16 +60,13 @@ html {
   font-weight: bold;
   text-transform: uppercase;
   color: #515151;
-  display: inline-block;
-
 }
-.nav_item :hover,
-.nav_item :focus {
+.nav_item a:hover,
+.nav_item a:focus {
   color: #1abc9c;
 }
 .article_header {
   position: relative;
-  padding-bottom: 42px;
   font-size: 48px;
   text-align: center;
   font-family: "Roboto";
@@ -112,7 +109,7 @@ html {
   background: #1abc9c;
 }
 .product__item:hover .price span,
-.product__item:focus .price {
+.product__item:focus .price span{
   background: #7fd9c7;
 }
 .product__item img {
@@ -140,12 +137,7 @@ html {
 .price span {
   float: right;
   width: 54px;
-  font-size: 18px;
-  line-height: 40px;
   text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
   background: #8c8c8c;
 }
 .news {
@@ -215,9 +207,7 @@ html {
   border: 1px #4ec6ab;
   border-radius: 3px;
   font-size: 16px;
-  line-height: 52px;  
   color: #fff;
   background-color: #4ec6ab;
-  text-align: center;
   font-family: "OpenSans", sans-serif;
 }
