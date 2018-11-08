@@ -43,11 +43,11 @@ html {
   font-weight: bold;
 }
 
-.nav_list{
+.nav_list {
   float: right;
 }
 
-.clearfix::after{
+.clearfix::after {
   content: '';
   clear: both;
   display: table;
@@ -55,12 +55,6 @@ html {
 
 .nav_item {  
   display: inline-block;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.nav_item:last-of-type {
-  margin-right: 0;
 }
 
 .nav_item a {
@@ -71,6 +65,11 @@ html {
   font-weight: bold;
   text-transform: uppercase;
   color: #515151;
+  padding: 0 15px;
+}
+
+.nav_item:last-of-type a {
+  padding-right: 0;
 }
 
 .nav_item a:hover,
@@ -103,7 +102,6 @@ html {
 }
 
 .products {
-  /* padding-top: 90px; */
   padding-bottom: 106px;
 }
 
@@ -130,7 +128,7 @@ html {
 }
 
 .product__item:hover .price span,
-.product__item:focus .price span{
+.product__item:focus .price span {
   background: #7fd9c7;
 }
 
